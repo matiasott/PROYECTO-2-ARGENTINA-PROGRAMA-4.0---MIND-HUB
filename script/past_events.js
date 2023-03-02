@@ -4,13 +4,11 @@ const fecha_actual= data.currentDate
 
 let arrayData = data.events
 
-// let contador = 0
-
 // for(i = 0;i < arrayData.length; i++){
 
 //     let date = arrayData[i].date
 
-//     if(fecha_actual > date && contador < 7){
+//     if(fecha_actual > date){
 
 //         let id = arrayData[i]._id
 //         let image = arrayData[i].image
@@ -34,8 +32,6 @@ let arrayData = data.events
 //         console.log("capacity :", capacity )
 //         console.log("assistance:", assistance )
 //         console.log("price:", price )
-
-//         contador++
 //     }
 // }
 
