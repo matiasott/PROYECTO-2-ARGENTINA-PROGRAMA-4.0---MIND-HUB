@@ -39,10 +39,14 @@ arrayData.map((x) => {
         <div class="card-body">
           <h5 class="card-title">${x.name}</h5>
           <p class=${x.description}</p>
-          <a href="./car_details.html" class="btn btn-primary">See more</a>
+          <a href="./car_details.html" onclick="guardarParametro(${x._id})" class="btn btn-primary">See more</a>
             <h6 class="precio">$ ${x.price}</h6>
         </div>
       </div>`
 })
 
 
+function guardarParametro(parametro) {
+  localStorage.setItem('mi_parametro', parametro);
+  window.location.href = "./car_details.html" + encodeURIComponent(parametro);
+}
