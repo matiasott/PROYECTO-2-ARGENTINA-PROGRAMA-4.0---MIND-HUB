@@ -165,8 +165,16 @@ h1{
 }
 
 .img-fluid{
-    width: 100%;
-    height: max-content;
+    height: 100%;
+    max-width: 100%;
+}
+
+.titulo-car{
+    font-size: 30px;
+}
+
+.precio{
+    justify-content: right;
 }
 
 

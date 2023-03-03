@@ -11,17 +11,17 @@ function details(id){
             cardDetails.innerHTML += `<div class="card mb-3" style="max-width: auto;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="${x.image}" class="img-fluid rounded-start" alt="...">
+            <img src="${x.image}" class="img-fluid rounded-start" alt="${x.name} event image">
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">${x.name}</h5>
+              <h5 class="card-title titulo-car">${x.name}</h5>
               <p class="card-text">${x.description}</p>
-              <p>Date: ${x.category}</p>
-              <p>Place: ${x.place}</p>
-              <p>Capacity: ${x.capacity}</p>
-              <p>Assistance: ${x.assistance}</p>
-              <h6>Price: ${x.price}</h6>
+              <p><strong>Date:</strong> ${x.category}</p>
+              <p><strong>Place:</strong> ${x.place}</p>
+              <p><strong>Capacity:</strong> ${x.capacity}</p>
+              <p><strong>Assistance:</strong> ${x.assistance}</p>
+              <p class="precio"><strong>Price:</strong> $${x.price}</p>
             </div>
           </div>
         </div>
