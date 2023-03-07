@@ -72,6 +72,10 @@ h1{
     align-items: center;
 }
 
+.form-check{
+    width: max-content;
+}
+
 .category{
     display: flex;
     flex-direction: row;
