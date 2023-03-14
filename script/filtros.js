@@ -5,7 +5,7 @@ function noExisteEvento(id) {
     container.innerHTML = `
     <div class="card m-2 card-box">
         <div class="card-body d-flex flex-column align-items-center">
-            <h4 class="card-title d-flex flex-column align-items-center justify-center">Event not found</h3>
+            <h4 class="card-title d-flex flex-column align-items-center justify-center">No events found for the applied filters</h3>
         </div>
     </div>
     `
