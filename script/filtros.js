@@ -71,7 +71,7 @@ function generacartsfiltradas(id,array_eventos) {
 
 
 
-function captureData() {
+function capturaFiltros() {
     let texto = document.getElementById('searchInput').value.toLowerCase()
     let checks = Array.from(document.querySelectorAll('.class_checks:checked')).map(each => each.value)
     let filtro = arrayChekbox.filter(each => {
