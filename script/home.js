@@ -16,6 +16,7 @@ arrayData.forEach(x =>{
           <a href="./car_details.html?id=${x._id}" class="btn btn-primary">See more</a>
             <h6 class="precio">$ ${x.price}</h6>
         </div>
-      </div>`
+      </div>
+      </article>`
 })
 

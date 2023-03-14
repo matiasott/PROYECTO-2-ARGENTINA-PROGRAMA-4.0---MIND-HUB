@@ -55,7 +55,8 @@ function ingresoCartHome(arrayCartFilter,carts){
               <a href="./car_details.html" onclick="guardarParametro(${x._id})" class="btn btn-primary">See more</a>
                 <h6 class="precio">$ ${x.price}</h6>
             </div>
-          </div>`
+          </div>
+          </article>`
     })    
 }
 
@@ -72,7 +73,8 @@ function ingresoCartPast(arrayCartFilter,carts){
               <a href="./car_details.html" onclick="guardarParametro(${x._id})" class="btn btn-primary">See more</a>
                 <h6 class="precio">$ ${x.price}</h6>
             </div>
-          </div>`
+          </div>
+          </article>`
         }
     })
 }
@@ -90,7 +92,8 @@ function ingresoCartUpcoming(arrayCartFilter,carts){
               <a href="./car_details.html" onclick="guardarParametro(${x._id})" class="btn btn-primary">See more</a>
                 <h6 class="precio">$ ${x.price}</h6>
             </div>
-          </div>`
+          </div>
+          </article>`
         }
     })
 }

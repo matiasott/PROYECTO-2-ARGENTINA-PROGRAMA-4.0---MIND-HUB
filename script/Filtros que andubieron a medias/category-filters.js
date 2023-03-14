@@ -1,3 +1,6 @@
+// este js hace que solo se construyan checkcheckbox con las categorias que existen en la consulta
+
+
 const arrayChekbox = arrayData
 let arrayfilter = []
 let arrayPast = []
@@ -50,7 +53,7 @@ function filtraEventosNuevos(arrayChekbox){
 // uso este condicional para que evalue en que html estoy y no calcule por demas
 if (window.location.href.endsWith("index.html")) {
   const filter_Home = filtraCategoriasRepetidas(arrayChekbox)  
-  filter_Home.map((x) => {
+  filter_Home.forEach(x =>{
     checkcheckbox.innerHTML += `<div class="form-check form-check-inline">
       <input class="form-check-input" type="checkbox" id="inlineCheckbox${x._id}" value="${x.category}">
       <label class="form-check-label" for="inlineCheckbox${x._id}">${x.category}</label>
@@ -60,7 +63,7 @@ if (window.location.href.endsWith("index.html")) {
 
 if (window.location.href.endsWith("past_events.html")) {
   const filter_Past = filtraCategoriasRepetidas(filtraEventosPasados(arrayChekbox))
-  filter_Past.map((x) => {
+  filter_Past.forEach(x => {
     checkcheckbox.innerHTML += `<div class="form-check form-check-inline">
       <input class="form-check-input" type="checkbox" id="inlineCheckbox${x._id}" value="${x.category}">
       <label class="form-check-label" for="inlineCheckbox${x._id}">${x.category}</label>
@@ -70,7 +73,7 @@ if (window.location.href.endsWith("past_events.html")) {
 
 if (window.location.href.endsWith("upcomig_events.html")) { 
   const filter_Upcoming = filtraCategoriasRepetidas(filtraEventosNuevos(arrayChekbox))
-  filter_Upcoming.map((x) => {
+  filter_Upcoming.forEach(x => {
     checkcheckbox.innerHTML += `<div class="form-check form-check-inline">
       <input class="form-check-input" type="checkbox" id="inlineCheckbox${x._id}" value="${x.category}">
       <label class="form-check-label" for="inlineCheckbox${x._id}">${x.category}</label>
