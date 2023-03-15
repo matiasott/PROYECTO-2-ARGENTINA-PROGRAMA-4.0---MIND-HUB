@@ -1,4 +1,6 @@
 
+getEvents().then(data => {
+
 let categorias = [] 
 arrayChekbox.forEach(each => {
     if ( ! categorias.includes(each.category) ) {
@@ -25,7 +27,11 @@ function printChecks(id_etiqueta,array_categorias) {
 </div>`)
     container.innerHTML = array_categorias.join('')
 }
-printChecks('#serch-categorias',categorias)
+printChecks('#serch-categorias',categorias);
+
+
+
+});
 
 
 

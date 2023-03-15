@@ -1,12 +1,10 @@
-var data = data
 
-const fecha_actual= data.currentDate
-
-const arrayData = data.events
+getEvents().then(data => {
 
 let card = document.getElementById("cart-home")
 
 arrayData.forEach(x =>{ 
+  
   card.innerHTML += `<article class="article-home">
     <div class="card" style="width: 18rem;">
         <img src="${x.image}" class="card-img-top" alt="${x.name} event image">
@@ -18,5 +16,9 @@ arrayData.forEach(x =>{
         </div>
       </div>
       </article>`
-})
+});
+
+});
+
+
 

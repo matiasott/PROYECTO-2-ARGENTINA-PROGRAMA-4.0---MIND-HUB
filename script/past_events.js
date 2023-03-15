@@ -1,6 +1,6 @@
-var data = data
 
-const fecha_actual= data.currentDate
+
+getEvents().then(data => {
 
 let arrayData = data.events
 
@@ -26,3 +26,5 @@ function guardarParametro(parametro) {
   localStorage.setItem('mi_parametro', parametro);
   window.location.href = "./car_details.html" + encodeURIComponent(parametro);
 }
+
+});

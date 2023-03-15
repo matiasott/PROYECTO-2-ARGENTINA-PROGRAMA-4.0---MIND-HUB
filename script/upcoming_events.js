@@ -1,8 +1,4 @@
-var data = data
-
-const fecha_actual= data.currentDate
-
-let arrayData = data.events
+getEvents().then(data => {
 
 let card = document.getElementById("cart-upcoming")
 
@@ -21,3 +17,4 @@ arrayData.forEach(x =>{
         </article>`}
 })
 
+});

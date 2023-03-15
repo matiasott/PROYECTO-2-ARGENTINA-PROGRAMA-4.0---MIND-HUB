@@ -1,4 +1,4 @@
-const arrayData = data.events
+getEvents().then(data => {
 
 const queryString = location.search
 
@@ -30,3 +30,6 @@ arrayData.map((x) => {
     </div>
   </div>`}
 })
+
+
+});
