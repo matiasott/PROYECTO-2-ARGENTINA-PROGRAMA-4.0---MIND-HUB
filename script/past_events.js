@@ -22,9 +22,6 @@ arrayData.forEach(x =>{
 })
 
 
-function guardarParametro(parametro) {
-  localStorage.setItem('mi_parametro', parametro);
-  window.location.href = "./car_details.html" + encodeURIComponent(parametro);
-}
+
 
 });

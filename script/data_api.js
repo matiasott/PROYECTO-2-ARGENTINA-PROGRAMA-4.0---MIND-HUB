@@ -19,6 +19,3 @@ getEvents().then(data => {
     arrayChekbox = arrayData
     
 });
-
-
-
