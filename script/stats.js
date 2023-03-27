@@ -24,6 +24,8 @@ getEvents().then(data => {
             datos.push(obj);
             }
                 })
+
+                console.log(datos)
         const valores = datos.reduce((acumulador, actual) => {
             if (!acumulador[actual.categoria]) {
                 acumulador[actual.categoria] = {
@@ -37,6 +39,8 @@ getEvents().then(data => {
             acumulador[actual.categoria].count++;
             return acumulador;
         }, {});
+
+        console.log(valores)
         for (let categoria in valores) {
             id_Upcoming.innerHTML += `
             <tr><td>${categoria}</td>
